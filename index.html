@@ -9,13 +9,12 @@
 <body>
     <div class="container">
         <h1>QR Code Generator</h1>
-        <textarea id="textInput" placeholder="Enter text to generate QR code"></textarea>
+        <textarea id="textInput" placeholder="Enter text to generate QR code" maxlength="2000"></textarea>
         <button id="generateBtn">Generate QR Code</button>
-        <div id="qrCodeContainer"></div>
+        <div id="qrCodeContainer" role="status" aria-live="polite"></div>
     </div>
 
-    <!-- Include QRCode.js from CDN -->
-    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
